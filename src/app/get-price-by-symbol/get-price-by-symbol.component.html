@@ -1,0 +1,60 @@
+<!-- <select (change)="changeSybmol($any($event.target).value)">
+    <option value="SHIBUSDT">SHIBUSDT</option>
+    <option value="BTCUSDT">BTCUSDT</option>
+
+</select>
+
+<select (change)="changeInterval($any($event.target).value)">
+    <option *ngFor="let item of intervals" value="{{item}}">{{item}}</option>
+    
+</select> -->
+<h1>Durumlar Coin : {{selectedSymbol}}</h1>
+hedefSatisFiyati: <br>
+alindiMi: {{alindiMi}}<br>
+  toplamKarZarar:{{toplamKarZarar}}<br>
+  alisFiyati: {{alisFiyati}}<br>
+  hedefSatisFiyati:  {{hedefSatisFiyati}}<br>
+  stopLossFiyati: {{stopLossFiyati}}<br>
+<h1>OrderBook</h1>
+totalBidsQuota : {{(binanceOrderBook$|async)?.totalBidsQuota|json}}<br>
+totalBidsPrice : {{(binanceOrderBook$|async)?.totalBidsPrice|json}}<br>
+totalAsksQuota : {{(binanceOrderBook$|async)?.totalAsksQuota|json}}<br>
+totalAsksPrice : {{(binanceOrderBook$|async)?.totalAsksPrice|json}}<br>
+maxBidsPrice : {{(binanceOrderBook$|async)?.maxBidsPrice|json}}<br>
+minBidsPrice : {{(binanceOrderBook$|async)?.minBidsPrice|json}}<br>
+
+maxAsksPrice : {{(binanceOrderBook$|async)?.maxAsksPrice|json}}<br>
+minAsksPrice : {{(binanceOrderBook$|async)?.minAsksPrice|json}}<br>
+
+bidsAsks :% {{(binanceOrderBook$|async)?.bidsAsks|json}}<br>
+asksBids :%{{(binanceOrderBook$|async)?.asksBids|json}}<br>
+
+
+<!-- <h1 style="color: orange;">{{artisAzalis$|async}}</h1>
+<h1 style="color: red;">Symbol : {{(price)?.symbol}}</h1>
+
+<hr>
+{{($any(klines$|async)[$any(klines$|async).length-1]|json)}}
+<hr>
+<h1 *ngIf="(lastPrices[1]).price>(price).price" style="color: red;">Price : {{(price$|async)?.price}}</h1> 
+<h1 *ngIf="(lastPrices[1]).price<(price).price" style="color: green;">Price : {{(price$|async)?.price}}</h1>
+<h1 *ngIf="(lastPrices[1]).price===(price).price" style="color: blue;">Price : {{(price$|async)?.price}}</h1> 
+
+
+<h2 *ngFor="let item of (lastPrices$|async)   " style="color: blue;">Price : {{item.price}}</h2>
+<hr>
+<h2 *ngFor="let item of (klines$|async)   " style="color: blue;">Price : {{item|json}}</h2>
+
+<h2 *ngFor="let item of (lastPrices)   " style="color: red;">Price : {{item.price}}</h2> -->
+
+<br>
+<br>
+<h1>Durumlar 222 - bilgidto Coin : {{selectedSymbol}} alsatYapılır : {{alSatYapilabilir}}</h1>
+{{bilgiDto|json}}
+<br>
+<br>
+
+
+<h1>Durumlar 222 - alisSatis geçmiş Coin : {{selectedSymbol}}</h1>
+{{alSatGecmis|json}}
+
